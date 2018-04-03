@@ -10,8 +10,9 @@ function makeCheckList(array) {
     for(var i = 0; i < array.length; i++) {
         // Create the list item:
         var container = document.createElement("div");
+        //container.align="center";
         var check = document.createElement('input');
-        check.setAttribute("type", "checkbox")
+        check.setAttribute("type", "checkbox");
         var item = document.createElement('label');
         // Set its contents:
         check.setAttribute("id", array[i]);
@@ -23,7 +24,7 @@ function makeCheckList(array) {
         checkList.appendChild(container);
     }
 
-    // Finally, return the constructed list:
+    // Finally, return the constructed list.
     return checkList;
 }
 
